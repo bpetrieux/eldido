@@ -1,0 +1,67 @@
+.blogue
+	padding 20px 0 40px 0
+	.main_title
+		padding 185px 0 70px;
+	article
+		margin-bottom 40px
+	&_thumbnail
+		lost-column 1
+		+above($medium)
+			lost-column: 1/3;
+			a
+				border-bottom: none
+		// img
+		// 	-webkit-mask-image -webkit-gradient(linear,left top,left bottom,from(rgba(255,255,255,.6)),to(rgba(255,255,255,0)))
+	&_text
+		lost-column 1  
+		+above($medium)
+			lost-column: 2/3;
+	&_date
+		margin-top 15px
+	&_link
+		border-bottom 2px solid $main
+		padding 2px 8px
+		&:hover
+			background-color $main
+			color white
+.article
+	margin-bottom 60px
+	.wp-post-image
+		margin-bottom: 44px;
+	&_content
+		+above($large)
+			lost-column 5/6
+		a
+			border-bottom 2px solid $main
+			padding: 4px 6px 2px 6px;
+			&:hover
+				background-color $main
+				color white
+		.fa
+			color $main
+	&_title
+		margin 60px 0
+	&_share
+		display: flex;
+		justify-content: flex-start;
+		align-items: baseline;
+		flex-direction column
+		+above($large)
+			lost-column 1/6
+			flex-direction column
+		p
+			margin 0
+		li
+			display inline-block
+			margin-right 6px
+		a
+			border none
+			font-size 20px
+			font-size 2.0rem
+			position: relative;
+			top: -2px;
+			.fa
+				cursor pointer
+			&:hover
+				.fa
+					color $main

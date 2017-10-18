@@ -1,0 +1,18 @@
+.btn
+	background-color $main
+	display inline-block
+	@extend .transition
+	a
+		color white
+		padding 18px 28px
+		display: block;
+	&:hover
+		background-color black
+	&-border
+		@extend .btn
+		border 2px solid white
+		&:hover
+			border 2px solid black
+	&_error
+		margin-top 12px
+		@extend .btn

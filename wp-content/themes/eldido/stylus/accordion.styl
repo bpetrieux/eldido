@@ -1,0 +1,38 @@
+.accordion
+	.dt
+		border: 2px solid black;
+		padding: 14px 12px;
+		&.actif
+			background-color black
+			@extend .transition
+			a
+				color white
+				transition none
+				&:hover
+					color white
+			.arrow-up
+				border-bottom: 10px solid white;
+				border-top: 10px solid transparent;
+				top -6px
+		&_title
+			color: black
+			text-decoration none
+			letter-spacing 3px
+			display flex
+			flex-direction row
+			justify-content space-between
+			align-items center
+			font-weight 50
+			border-bottom none
+		&:hover
+			a 
+				color black
+				background-color: transparent
+	dd
+		border-top: 0; 
+		margin-top 20px
+		font-size: 16px;
+		&:last-of-type
+			border-top: 1px solid white;
+			position: relative;
+			top: -1px;

@@ -1,0 +1,88 @@
+.police_bold
+	font-family: "filson-soft",sans-serif;
+	font-style: normal;
+	font-weight: 700;
+.police_regular
+	font-family: "filson";
+	font-style: normal;
+	font-weight: 400;
+.police_light
+	font-family: "filson-soft",sans-serif;
+	font-style: normal;
+	font-weight: 100;
+a
+	text-decoration:none;
+	font-size:16px;
+	line-height:24px
+	@extend .transition
+p,ul,h5,.h5
+	margin 12px 0
+	font-style: normal;
+	font-size:15px;
+	line-height:24px
+p,li
+	@extend .police_regular
+a
+	@extend .police_bold
+	text-decoration:none;
+	font-size:16px;
+	line-height:24px
+	color black
+	@extend .transition
+em,i
+	font-style italic
+h1,
+.h1
+	font-size 32px
+	line-height 42px
+	margin-bottom 24px
+	@extend .police_bold
+	+above($medium)
+		font-size 32px
+		line-height 42px
+		margin-bottom 24px
+h2,
+.h2
+	font-size 25px
+	@extend .police_bold
+	line-height 25px
+h3,
+.h3
+	font-size 25px
+	@extend .police_regular
+	line-height 25px
+h4,
+.h4
+	font-size 20px
+	@extend .police_regular
+	line-height 20px
+h5,
+.h5,
+.bold
+	font-size: 14px
+	@extend .police_bold
+h6,
+.h6
+	font-size: 12px
+	@extend .police_light
+blockquote
+	margin: 40px 0 40px 20px;
+	padding: 8px 0 8px 20px;
+	border-left: 4px solid $main;
+	@extend .police_light
+.list-icone
+	margin-left 20px
+	li
+		position relative
+		display block
+	.fa
+		position absolute
+		top 4px
+		left -22px
+.arrow-up
+	width: 0; 
+	height: 0; 
+	position:relative
+	border-left: 10px solid transparent;
+	border-right: 10px solid transparent;
+	border-top: 10px solid black;

@@ -1,0 +1,70 @@
+.single-nav
+	min-height: 80px
+	z-index: 1
+	width: 100%
+	a
+		border: none
+		&:after
+			display: none
+	.single-nav-btn
+		background: $main
+		display: block
+		height: 80px
+		max-width: 60px
+		overflow: hidden
+		position: absolute
+		transition: all 0.3s
+		.item-content
+			height: 100%
+			overflow: hidden
+			padding: 0 15px
+			text-overflow: ellipsis
+			white-space: nowrap
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		.valign
+			width: 100%
+		.item-name
+			text-transform: none
+		.item-title
+			overflow: hidden
+			text-overflow: ellipsis
+			white-space: nowrap
+			color white
+		.item-image
+			position: absolute
+			height: 100%
+			width: auto
+			top: 0
+		.item-arrow
+			background: $main no-repeat center
+			background-size: 12px 24px
+			height: 100%
+			position: absolute
+			top: 0
+			width: 60px
+		&.next
+			padding-right: 60px
+			right: 0
+			.item-image
+				right: 100%
+			.item-arrow
+				background-image: url("../img/next-white.png")
+				right: 0
+		&.prev
+			left: 0
+			padding-left: 60px
+			.item-image
+				left: 100%
+			.item-arrow
+				background-image: url("../img/prev-white.png")
+				left: 0
+
+.single-nav-btn
+	&:hover
+		max-width: 40px
+		overflow: hidden
+		+above($small)
+			max-width: 340px
+			overflow: visible

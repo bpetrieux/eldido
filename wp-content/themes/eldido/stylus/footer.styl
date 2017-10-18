@@ -1,0 +1,57 @@
+.footer
+	background-color black
+	color white
+	padding 40px 0
+	z-index 1
+	&_logo
+		margin 20px 20px 0 20px
+		img
+			opacity: 0.8
+			max-width 160px
+		&:hover
+			img
+				opacity 1
+	&_contact
+		text-align center
+		+above($medium)
+			text-align left
+			lost-column: 1/3;
+	&_social
+		display flex
+		flex-direction row
+		justify-content center
+		align-items center
+		padding 24px 0
+		+above($medium)
+			padding 12px 0
+			justify-content flex-start
+		a
+			margin 0 12px
+			+above($medium)
+				margin 0 24px 0 0
+	a
+		color white
+		display: inline-block;
+		&:hover
+			color $main
+		.fa
+			font-size 25px
+.credit
+	.container
+		display flex
+		flex-direction column
+		justify-content center
+		align-items center
+		background-color white
+		z-index 1
+		position relative
+		padding-bottom 40px
+		+above($medium)
+			padding-bottom 0
+			flex-direction row
+			justify-content: space-between;
+			width 100%
+			p
+				width 50%
+			.right
+				text-align right

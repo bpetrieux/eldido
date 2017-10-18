@@ -1,0 +1,98 @@
+.owl
+	&-carousel
+		overflow hidden
+		margin-top 8px
+		height 360px
+		+above(780px)
+			margin-top 48px
+		+above($large)
+			margin-top: 91px;
+			height 460px
+		.active
+			span
+				background $main
+	&-dots
+		display inline-block
+		position absolute
+		bottom 0px
+		left: 50%;
+		transform: translate(-50%, 0%);
+	&-dot
+		display inline-block
+		span
+			display block
+			margin 5px 7px
+			opacity 1
+			height 14px
+			width 14px
+			background black
+			-ms-transform rotate(45deg) /* Internet Explorer */
+			-moz-transform rotate(45deg) /* Firefox */
+			-webkit-transform rotate(45deg) /* Safari et Chrome */
+			-o-transform rotate(45deg) /* Opera */
+	&-prev,
+	&-next
+		font-size 26px
+	&-nav
+		position absolute
+		top 50%
+		left 50%
+		transform translate(-50%, -50%)
+		max-width 1000px
+		padding 0 30px
+		display flex
+		flex-direction row
+		justify-content space-between
+		align-items center
+		width 100%
+.slider
+	&_item
+		position: relative;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		height 360px
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: center;
+		+above(780px)
+			overflow hidden
+		+above($large)
+			height 460px
+	&_text
+		width 100%
+		position: absolute
+		top 0px
+		left 0px
+		display none
+		top 12%
+		padding 0
+		+above(780px)
+			display block
+			top 15%
+			padding 0 80px
+		+above($large)
+			top 30%
+		.container
+			padding-left 60px
+			padding-right 60px
+			position relative
+			+above($large)
+				padding-left 120px
+				padding-right 120px
+		h1
+			@extend .police_bold
+			font-size 12px
+			margin-bottom 0
+			+above($small)
+				display block
+				font-size 24px
+				margin-bottom: 24px;
+			+above(780px)
+				font-size 50px
+		p
+			margin 0
+			+above($small)
+				margin: 26px 0
+			max-width 450px

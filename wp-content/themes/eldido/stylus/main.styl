@@ -1,0 +1,44 @@
+body
+	background-color #fff
+	animation: fadeIn 1s forwards
+	margin 0 auto
+	font-style: normal;
+	font-size:16px;
+	line-height:24px
+	font-family: sans-serif;
+	max-width: 1800px;
+img
+	max-width 100%
+html
+	font-size: 62%;
+	font-weight:500
+*
+	box-sizing:border-box;
+section,header,footer,article
+	lost-utility: clearfix;
+	position relative
+.container
+	lost-center: $large 30px
+.hero
+	text-align center
+	color white
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	+above($large)
+		background-attachment: fixed;
+	.container
+		padding-top 126px
+		padding-bottom 126px
+	&_logo
+		max-width 392px
+.contact
+	background-color $main
+	text-align center
+	color white
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	.container
+		padding-top 126px
+		padding-bottom 126px
