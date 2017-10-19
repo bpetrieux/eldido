@@ -34,7 +34,7 @@
 			<?php 
 			$service_titre_1 = get_field( "service_titre_1" );
 			if( $service_titre_1 ) {  ?>
-			<h2 class="services_titre"><?php echo $service_titre_1  ?></h2>
+			<h3 class="services_titre"><?php echo $service_titre_1  ?></h3>
 			<?php } ?>
 			<?php 
 			$service_text_1 = get_field( "service_text_1" );
@@ -50,7 +50,7 @@
 		<?php 
 		$service_titre_2 = get_field( "service_titre_2" );
 		if( $service_titre_2 ) {  ?>
-		<h2 class="services_titre"><?php echo $service_titre_2  ?></h2>
+		<h3 class="services_titre"><?php echo $service_titre_2  ?></h3>
 		<?php } ?>
 		<?php 
 		$service_text_2 = get_field( "service_text_2" );
@@ -66,7 +66,7 @@
 	<?php 
 	$service_titre_3 = get_field( "service_titre_3" );
 	if( $service_titre_3 ) {  ?>
-	<h2 class="services_titre"><?php echo $service_titre_3  ?></h2>
+	<h3 class="services_titre"><?php echo $service_titre_3  ?></h3>
 	<?php } ?>
 	<?php 
 	$service_text_3 = get_field( "service_text_3" );

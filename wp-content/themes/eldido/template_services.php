@@ -14,7 +14,7 @@
 				<?php 
 				$service_texte_1 = get_field( "service_texte_1" );
 				if( $service_texte_1 ) {  ?>
-				<p><?php echo $service_texte_1  ?></p>
+				<?php echo $service_texte_1  ?><
 				<?php } ?>
 				<?php if( have_rows('service_liste_1') ): ?>
 					<ul>
@@ -42,7 +42,7 @@
 			<?php 
 			$service_texte_2 = get_field( "service_texte_2" );
 			if( $service_texte_2 ) {  ?>
-			<p><?php echo $service_texte_2  ?></p>
+			<?php echo $service_texte_2  ?><
 			<?php } ?>
 			<?php if( have_rows('service_liste_2') ): ?>
 				<ul>
@@ -70,7 +70,7 @@
 		<?php 
 		$service_texte_3 = get_field( "service_texte_3" );
 		if( $service_texte_3 ) {  ?>
-		<p><?php echo $service_texte_3  ?></p>
+		<?php echo $service_texte_3  ?><
 		<?php } ?>
 		<?php if( have_rows('service_liste_3') ): ?>
 			<ul>
