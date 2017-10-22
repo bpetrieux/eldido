@@ -3,7 +3,7 @@
 	font-style: normal;
 	font-weight: 700;
 .police_regular
-	font-family: "filson";
+	font-family: arial;
 	font-style: normal;
 	font-weight: 400;
 .police_light
@@ -15,11 +15,12 @@ a
 	font-size:16px;
 	line-height:24px
 	@extend .transition
-p,ul,h5,.h5
+p,ul
 	margin 12px 0
 	font-style: normal;
-	font-size:15px;
+	font-size:16px;
 	line-height:24px
+	margin-bottom 16px
 p
 	@extend .police_regular
 a
@@ -46,6 +47,7 @@ h2,
 	font-size 27px
 	@extend .police_bold
 	line-height 27px
+	margin-bottom 22px
 h3,
 .h3
 	font-size 21px
@@ -54,22 +56,26 @@ h3,
 h4,
 .h4
 	font-size 18px
-	@extend .police_regular
+	@extend .police_bold
 	line-height 22px
 h5,
 .h5,
 .bold
 	font-size: 16px
-	@extend .police_bold
-	line-height 35px
+	@extend .police_regular
+	font-weight 500
+	font-size:16px;
+	line-height:24px
+	margin 12px 0 16px 0
 h6,
 .h6
-	font-size: 11px
-	@extend .police_regular
+	font-size: 14px
+	line-height 18px
+	font-family: arial
 li
 	font-size: 11px
 	@extend .police_bold
-	line-height 25px
+	line-height 16px
 blockquote
 	margin: 40px 0 40px 20px;
 	padding: 8px 0 8px 20px;

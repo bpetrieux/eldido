@@ -5,7 +5,7 @@ if (!defined('ABSPATH')) exit;
 // define max content width
 function shapeSpace_content_width() {
 
-	$GLOBALS['content_width'] = 1140;
+	$GLOBALS['content_width'] = 1280;
 
 }
 add_action('after_setup_theme', 'shapeSpace_content_width', 0);
@@ -242,9 +242,3 @@ function remove_thumbnail_dimensions( $html, $post_id, $post_image_id ) {
 	$html = preg_replace( '/(width|height)=\"\d*\"\s/', "", $html );
 	return $html;
 }
-
-//Acf Google map
-function my_acf_init() {
-	acf_update_setting('google_api_key', 'AIzaSyCBfhvy7Jn35KY-OdOJWlCfla4Er_fJ5KE');
-}
-add_action('acf/init', 'my_acf_init');

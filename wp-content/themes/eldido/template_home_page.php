@@ -14,7 +14,7 @@
 	<?php 
 	$hero_subtitle = get_field( "hero_subtitle" );
 	if( $hero_subtitle ) {  ?>
-	<h2><?php echo $hero_subtitle  ?></h2>
+	<h5><?php echo $hero_subtitle  ?></h5>
 	<?php } ?>
 	<?php 
 	$telephone = get_field( "telephone_number","option" );
@@ -39,8 +39,9 @@
 			<?php 
 			$service_text_1 = get_field( "service_text_1" );
 			if( $service_text_1 ) {  ?>
-			<p class="services_text"><?php echo $service_text_1  ?></p>
+			<h6 class="services_text"><?php echo $service_text_1  ?></h6>
 			<?php } ?>
+			<div class="btn"><a href="<?php echo home_url(); ?>/services#patios-sur-mesure">+ de détails</a></div>
 		</div>
 		<div class="services_box">
 			<?php $service_icone_2 = get_field('service_icone_2');
@@ -55,8 +56,9 @@
 		<?php 
 		$service_text_2 = get_field( "service_text_2" );
 		if( $service_text_2 ) {  ?>
-		<p class="services_text"><?php echo $service_text_2  ?></p>
+		<h6 class="services_text"><?php echo $service_text_2  ?></h6>
 		<?php } ?>
+		<div class="btn"><a href="<?php echo home_url(); ?>/services#renovation-residentielle">+ de détails</a></div>
 	</div>
 	<div class="services_box">
 		<?php $service_icone_3 = get_field('service_icone_3');
@@ -71,8 +73,9 @@
 	<?php 
 	$service_text_3 = get_field( "service_text_3" );
 	if( $service_text_3 ) {  ?>
-	<p class="services_text"><?php echo $service_text_3  ?></p>
+	<h6 class="services_text"><?php echo $service_text_3  ?></h6>
 	<?php } ?>
+	<div class="btn"><a href="<?php echo home_url(); ?>/services#finition-interieur">+ de détails</a></div>
 </div>
 </div>
 </div>
@@ -86,20 +89,6 @@ if( $info_content ) {  ?>
 	</div>
 </section>	
 <?php  } ?>
-<?php $contact_background_image = get_field('contact_background_image'); ?>
-<section class="contact" style="background-image:url(<?php echo $contact_background_image['url']; ?>)">
-	<div class="container">
-		<!-- 6LcF9TQUAAAAAC_F8co5x1984iULhp1MNpws-9R6
-			6LcF9TQUAAAAALmsLAjf_RnPZ-4bX1iH_X-Vrwk-
- -->
-		<?php 
-		$contact_content = get_field( "contact_content" );
-		if( $contact_content ) {  ?>
-		<?php echo $contact_content  ?>
-		<?php } ?>
-		<?php echo do_shortcode( '[contact-form-7 id="4" title="Contact form Fr"]' ); ?>
-	</div>
-</section>
 
 
 <?php get_footer(); ?>

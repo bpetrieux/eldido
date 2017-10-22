@@ -11,21 +11,25 @@
 	input,textarea
 		display block
 		background-color rgba(0,0,0,0)
-		border 2px solid white
-		border-radius 2px
+		border 1px solid white
+		border-radius 10px
 		color white
 		width 100%
-		margin-bottom: 24px;
 		padding: 12px 18px;
 		outline none
 		font-size 16px
+		margin-bottom: 24px;
+		+above($medium)
+			margin-bottom 0
 	textarea
 		height: 100px;
+		margin-bottom: 24px;
 	&_col
 		display flex
 		width 100%
 		flex-direction column
 		+above($medium)
+			margin-bottom: 24px;
 			flex-direction row
 			justify-content space-between
 		input
@@ -36,7 +40,7 @@
 			justify-content: flex-end;
 			display flex
 	.wpcf7-submit
-		@extend .police_regular
+		@extend .police_bold
 		text-transform uppercase
 		cursor: pointer;
 		display: block;
@@ -49,9 +53,11 @@
 		letter-spacing 1px
 		-webkit-appearance: none;
 		border none
+		@extend .transition
 		&:hover
-			text-decoration underline
+			//text-decoration underline
 			color white
+			background-color black
 div.wpcf7 .ajax-loader
 	background-image: url(../img/ajax-loader.gif)
 	background-repeat no-repeat
@@ -60,25 +66,29 @@ div.wpcf7 .ajax-loader
 	margin-top: 12px
 	background-size: 24px 24px;
 form .wpcf7-not-valid-tip
-	display none
-form .wpcf7-not-valid
-	border: dashed 4px $main!important;
+	display none!important
+form .wpcf7-not-valid,div.wpcf7-validation-errors
+	border: dashed 4px white!important;
 div.wpcf7-validation-errors,div.wpcf7-mail-sent-ok
-	border: dashed 4px $main !important;
 	margin: 32px 0;
 	text-align: center;
 	font-size 18px
-	background-image: url(../img/parrotcop.gif)
 	background-position 12px
 	background-repeat no-repeat
+div.wpcf7-mail-sent-ok
+	border: dashed 4px $white !important;
 ::-webkit-input-placeholder
 	color white
+	font-size 14px
 :-moz-placeholder
 	color white
+	font-size 14px
 ::-moz-placeholder
 	color white
+	font-size 14px
 :-ms-input-placeholder
 	color white
+	font-size 14px
 .modal_close
 	position: absolute;
 	top: -32px;

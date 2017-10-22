@@ -2,7 +2,7 @@
 jQuery( document ).ready( function( jQuery ) {
   //modal();
   //modalClose();
-  //MoveTo();
+  MoveTo();
   //videoShow();
   //accordion();
   hamburger();
@@ -75,7 +75,7 @@ function videoShow () {
 
   function MoveTo() {
     // Select all links with hashes
-    jQuery('a[href*="#"]')
+    jQuery('.scroll a')
   // Remove links that don't actually link to anything
   .not('[href="#"]')
   .not('[href="#0"]')
