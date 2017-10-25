@@ -12,7 +12,7 @@
 		@extend .flex-large
 		+above($large)
 			align-items center
-			justify-content center
+			justify-content space-between
 	&_nav
 		ul
 			@extend .flex-large
@@ -23,12 +23,15 @@
 			color white
 			@extend .police_regular
 			font-weight 500
+			font-size: 14px;
 			&:hover
 				background-color $main
 				color white
 	&_logo
 		width:134px
 		margin-top 2px
+		+above($large)
+			margin-right: auto;
 .header-mobile-actif
 	.header_language
 		display block
